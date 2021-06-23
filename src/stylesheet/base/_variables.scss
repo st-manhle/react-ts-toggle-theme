@@ -8,12 +8,15 @@ $breakpoints: (
   super-largest: 1441px
 );
 
-$color: (
-  primary:  #E61E56,
-  orange-a: #a17143,
-  grey-a: #f3f3f3,
-  black: #000000,
-  white: #FFFFFF
+$themes: (
+  light: (
+    primary:  #fff,
+    secondary: #000,
+  ),
+  dark: (
+    primary:  #000,
+    secondary: #fff,
+  ),
 );
 
 $font-size: (

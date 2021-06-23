@@ -9,10 +9,8 @@ html, body {
   font-family: $font-body;
   position: relative;
   font-weight: 300;
-  color: map-get($color, black);
   line-height: 1.7;
   letter-spacing: 0.8px;
-  background-color: map-get($color, white);
   overscroll-behavior: contain;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -22,4 +20,12 @@ html, body {
 image {
   max-width: 100%;
   width: 100%;
+}
+
+body {
+  @include theme-aware('background', 'primary');
+}
+
+p {
+  @include theme-aware('color', 'secondary');
 }
