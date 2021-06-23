@@ -37,11 +37,11 @@ export function Header() {
           <Link to="auth/register">Register</Link>
         </li>
         <li>
-        <select defaultValue={selectedThemeRef.current} onChange={(e) => changeTheme(e.target.value)}>
-          {THEMES.map((theme, index) =>
-            <option value={theme} key={index}>{theme}</option>
-          )}
-        </select>
+          <select defaultValue={selectedThemeRef.current} onChange={(e) => changeTheme(e.target.value)}>
+            {THEMES.map((theme, index) =>
+              <option value={theme} key={index}>{theme}</option>
+            )}
+          </select>
         </li>
       </ul>
     </header>
